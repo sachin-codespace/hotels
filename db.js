@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
-
-require('dotenv').config()
+require('dotenv').config();
 // Correct MongoDB URL
-const mongoDbUrl = process.env.MONGO_DB_URL; // Ensure the URL is correct
+const mongoDbUrl = process.env.MONGO_DB_URL; 
+// const mongoDbUrlLocal=process.env.MONGO_DB_URL_LOCAL;
+// const mongoDbUrl = "mongodb+srv://sachinprajapatijaipur:sachin7427@cluster0.h7fhu3t.mongodb.net/"; 
+
 
 // Set up connection
 mongoose.connect(mongoDbUrl, {
