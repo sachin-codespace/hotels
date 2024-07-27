@@ -16,7 +16,6 @@ app.get('/', function (req, res) {
 const personRoutes=require('./routes/personRoutes');
 app.use('/person',personRoutes)
 
-
 const menuRoutes=require('./routes/menuItemsRoutes');
 app.use('/menu',menuRoutes)
 

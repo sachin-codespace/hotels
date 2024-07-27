@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
-// Correct MongoDB URL
 const mongoDbUrl = process.env.MONGO_DB_URL; 
 // const mongoDbUrlLocal=process.env.MONGO_DB_URL_LOCAL;
 // const mongoDbUrl = "mongodb+srv://sachinprajapatijaipur:sachin7427@cluster0.h7fhu3t.mongodb.net/"; 
@@ -8,8 +7,8 @@ const mongoDbUrl = process.env.MONGO_DB_URL;
 
 // Set up connection
 mongoose.connect(mongoDbUrl, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true
 });
 
 // Mongoose maintains a default connection object representing the MongoDB connection
